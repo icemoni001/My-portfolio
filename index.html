@@ -5,12 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Icemoney</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-       
+        body {
+            background-color: black;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+        .works-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .works-section h2 {
+            margin-bottom: 20px;
+        }
+        .works-section .see-all {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .works-section .card {
+            background-color: #dc3545;
+            border: none;
+            border-radius: 60px;
+            border-bottom-left-radius: 60px;
+            border-bottom-right-radius: 60px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .works-section .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .works-section .card-body {
+            padding: 20px;
+        }
+        .works-section .btn-view-project {
+            background-color: #000000;
+            color: #dc3545;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .works-section .btn-view-project:hover {
+            background-color: #949493;
+        }
+    </style>
+    <title>Icemoney - Portfolio</title>
+    <style>
+        * {
+            background-color: black;
+        }
+    </style>
+    <style>
+         * {
+            background-color: black;
+        }
+
+        .skills-section {
+            text-align: center;
+            background-color: black;
+        }
+        .skills-section h2 {
+            margin-bottom: 30px;
+        }
+        .skills-section .card {
+            background-color: black;
+            border: none;
+            color: #fff;
+        }
+        .skills-section .card-title {
+            color: #dc3545;
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .skills-section .card-text {
+            font-size: 1rem;
+        }
+        .skills-section img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <style>
         .about-section {
-            display: flex;
-            align-items: center;
             color: #fff;
             display: flex;
             justify-content: center;
@@ -18,28 +99,25 @@
             height: 100vh;
             margin: 0;
         }
+
         .about-section .card {
             border: none;
             color: #fff;
-            padding: 20px;
+            padding: 10px;
             border-radius: 10px;
+            margin: 0;
         }
-        .character {
-            margin-right: 20px;
-        }
+            
         .character img {
-            width: 150px;
-
+            width: 30rem;
+            height: 95vh;
+            
         }
     </style>
   
     <style>
         section{
             padding:60px 0;
-        }
-
-        * {
-            background-color: black;
         }
     </style>
 </head>
@@ -71,7 +149,10 @@
                     <a class="nav-link text-light" href="#About">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" href="#work">Works</a>
+                    <a class="nav-link text-light" href="#testimony">Testimony</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-light" href="#contact">Contact</a>
@@ -89,11 +170,11 @@
                     <h1>
                         <div class="display-3 text-danger">Hi! I'm Ebuka</div>
                         <div class="text-danger">
-                            Web developer
+                            "Front_End-Web developer"
                         </div>
                     </h1>
                     <p class="lead my-4 text-light">
-                     A web developer and graphic designer with over 5 years of experience
+                     A web developer and graphic designer with over 2 years of experience
                     creating unique and visually engaging websites and graphics. I specialize in front-end development
                     and have a keen eye for design. My goal is to create digital experiences that are both functional and beautiful.
                     </p>
@@ -119,9 +200,10 @@
     </section>
 
     <!--- about section --->
+    <div class="mt-5 pt-5 mb-5 pb-5">
     <div class="about-section">
-        <div class="character">
-            <img src="assets/me.png" alt="3D Character">
+        <div class="character col-md-3">
+            <img class="img-fluid" src="assets/me.png" alt="3D Character">
         </div>
         <div class="card bg-danger col-md-5 text-center text-md-start">
             <div class="card-body bg-danger">
@@ -137,6 +219,91 @@
             </div>
         </div>
     </div>
+</div>
+
+
+    <!--- my skill section --->
+    <div class="mt-5 pt-5 mb-5 pb-5">
+    <div class="container skills-section">
+        <h2 class="text-md-start text-danger">My skills...</h2>
+        <div class="row bg-dark">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/photoshop.png" alt="graphic design">
+                        <h5 class="card-title">Graphic design</h5>
+                        <p class="card-text">Adobe XD, Adobe Photoshop, corel draw & Adobe Illustrator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/web design.png" alt="Web design">
+                        <h5 class="card-title">Web design</h5>
+                        <p class="card-text">HTML, CSS, Javasript & Pyton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="assets/ul/ux.png" alt="UX design">
+                        <h5 class="card-title">UX design</h5>
+                        <p class="card-text">User interview, surveys, competitive audit, personas & usability testing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+ <!--- the card section --->
+ <div class="mt-5 pt-5">
+ <div class="container works-section mt-5 pt-5">
+    <div class="row text-md-start text-danger">
+        <div class="col-6">
+            <h2>My works</h2>
+        </div>
+        <div class="col-6 see-all">
+            <a href="#" class="text-warning">See All</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/webscreenshot.png" alt="Net Ninja">
+                <div class="card-body bg-danger">
+                    <h5 class="card-title bg-danger">Net Ninja ProBook</h5>
+                    <p class="card-text bg-danger">Net ninja probook is a landing page web design for selling of book that teaches about website for this brand have an existing website...</p>
+                    <a href="https://icemoni001.github.io/my-first-bootstrap/#pricing" class="btn btn-view-project">View project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/webpic.png" alt="Adventure website">
+                <div class="card-body bg-danger">
+                    <h5 class="card-title bg-danger">Adventure</h5>
+                    <p class="card-text bg-danger">Adventure is a landing page web design for Nature & discovering for this brand have an existing website...</p>
+                    <a href="#" class="btn btn-view-project">View project</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="assets/friday.jpg" alt="party flyer">
+                <div class="card-body bg-danger">
+                    <h5 class="card-title bg-danger">Party Flyer</h5>
+                    <p class="card-text bg-danger">This is an amazing & exclusive club flyer for social media...</p>
+                    <a href="#" class="btn btn-view-project btn-danger">View project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
