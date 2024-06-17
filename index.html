@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    .card {
+            width: 18rem;
+            border: block;
+            border-radius: 30px;
+            justify-content: center;
+            margin-bottom: 150px;
+            margin-top: 50px;
+        }
+        .card-body {
+            text-align: center;
+            border-radius: 30px;
+        }
+        .contact-info {
+            margin-bottom: 100px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #dc3545;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 150px;
+        }
+        .footer a {
+            background-color: #dc3545;
+            color: #fff;
+            margin: 0 10px;
+        }
+</style>
+
     <style>
         body {
             background-color: black;
@@ -31,7 +65,7 @@
             border-bottom-left-radius: 60px;
             border-bottom-right-radius: 60px;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 150px;
         }
         .works-section .card img {
             border-top-left-radius: 15px;
@@ -115,11 +149,7 @@
         }
     </style>
   
-    <style>
-        section{
-            padding:60px 0;
-        }
-    </style>
+    
 </head>
 <body>
 
@@ -163,20 +193,23 @@
     </nav>
 
     <!--- intro & main img --->
-    <section id="about">
+    <section id="about" class="py-5 mt-5">
         <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
+            <div class="row max-vh-100 align-items-center align-content-center main-home mt-5">
+                <div class="col-md-6 mt-5 mt-md-0 home-img d-flex align-items-center justify-content-center">
+                    <img src="assets/ebus.png" alt="Hero Page" class="h-img img-fluid hero-img">
+                </div>
+                <div class="col-md-6 mt-5 mt-md-0 order-md-first text-md-start text-sm-start text-cont">
                     <h1>
                         <div class="display-3 text-danger">Hi! I'm Ebuka</div>
-                        <div class="text-danger">
+                        <div class="text-danger fs-4">
                             "Front_End-Web developer"
                         </div>
                     </h1>
-                    <p class="lead my-4 text-light">
-                     A web developer and graphic designer with over 2 years of experience
-                    creating unique and visually engaging websites and graphics. I specialize in front-end development
-                    and have a keen eye for design. My goal is to create digital experiences that are both functional and beautiful.
+                    <p class="lead mt-4 text-light">
+                    A web developer and graphic designer with over 2 years of experience
+                    creating unique and visually engaging websites and graphics.
+                    My goal is to create digital experiences that are both functional and beautiful.
                     </p>
                     <a href="#contact" class="btn btn-danger btn-lg">Hire Me</a>
                     <a href="#" class="btn border-danger btn-lg text-danger" download>Download CV</a>
@@ -191,9 +224,6 @@
                             <i class="bi bi-github"></i>
                         </a>
                     </div>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="h-img img-fluid hero-img" src="assets/ebus.png" alt="Profile picture">
                 </div>
             </div>
         </div>
@@ -305,6 +335,107 @@
 </div>
 </div>
 
+    <!--- Rate card section --->
+    <div class="container my-3">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="text-danger">My Clients</h2>
+            <a href="#" class="see-all text-warning">See All</a>
+        </div>
+        <div class="row">
+            <div class="col-md-4 gap-4">
+                <div class="card bg-danger">
+                    <div class="card-body bg-danger">
+                        <div class="avatar mb-3 bg-danger">
+                            <img src="https://via.placeholder.com/100" alt="Avatar" class="rounded-circle">
+                        </div>
+                        <h5 class="card-title bg-danger">Maduabuchi</h5>
+                        <p class="card-text bg-danger">Loved his work, his passion of come with a new ideas, her creativity and I support her great job</p>
+                        <div class="star-rating bg-danger">
+                            <span class="bg-danger">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 gap-4">
+                <div class="card bg-danger">
+                    <div class="card-body bg-danger">
+                        <div class="avatar mb-3 bg-danger">
+                            <img src="https://via.placeholder.com/100" alt="Avatar" class="rounded-circle">
+                        </div>
+                        <h5 class="card-title bg-danger">Daniel</h5>
+                        <p class="card-text bg-danger">Loved her work, her passion of come with a new ideas, her creativity and I support her great job</p>
+                        <div class="star-rating bg-danger">
+                            <span class="bg-danger">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 gap-4">
+                <div class="card bg-danger">
+                    <div class="card-body bg-danger">
+                        <div class="avatar mb-3 bg-danger">
+                            <img src="https://via.placeholder.com/100" alt="Avatar" class="rounded-circle">
+                        </div>
+                        <h5 class="card-title bg-danger">Victoria</h5>
+                        <p class="card-text bg-danger">Loved her work, her passion of come with a new ideas, her creativity and I support her great job</p>
+                        <div class="star-rating bg-danger">
+                            <span class="bg-danger">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+       <!--- contact section --->
+        <h2 class="text-center mb-5 text-danger">Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6 border-danger">
+                <div class="contact-info">
+                    <p><i class="bi bi-geo-alt"></i> No. 8b CHIGBO CRESENT Behind Ambest Purewater</p>
+                    <p><i class="bi bi-telephone"></i> +234 805 325 8947</p>
+                    <p><i class="bi bi-envelope"></i> ebukanebolise220@gmail.com</p>
+                    <p><i class="bi bi-phone"></i> +234 903 248 3054</p>
+                </div>
+            </div>
+            <div class="col-md-6 border-danger">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="3" placeholder="Typing your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer bg-danger">
+        <p class="bg-danger">EBUKA.</p>
+        <div class="bg-danger">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Testimony</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="bg-danger">
+            <a href="#"><i class="bi bi-facebook bg-danger"></i>
+            <a href="#"><i class="bi bi-instagram bg-danger"></i></a>
+            <a href="#"><i class="bi bi-github bg-danger"></i></a>
+        </div>
+        <p class="bg-danger">@icedesignworld</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
